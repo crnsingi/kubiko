@@ -50,7 +50,7 @@ const TabsLayout = () => {
           title: "Home",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.home} title="Home" />
+            <TabIcon focused={focused} icon={icons.home} title="Página Inicial" />
           ),
         }}
       />

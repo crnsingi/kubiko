@@ -5,24 +5,18 @@ import { Models } from "react-native-appwrite";
 
 
 interface Props {
-  item: Models.Document;
+  item: Models.Document & Place;
   onPress?: () => void;
 }
 
-
-/* interface Props {
-  item: Place;
-  onPress?: () => void;
-}
-interface Place extends Models.Document {
+type Place = {
   image: string;
   name: string;
   address: string;
   rating: number;
   price: number;
-}
+};
 
-*/
 
 
 export const FeaturedCard = ({ item, onPress }: Props) => {

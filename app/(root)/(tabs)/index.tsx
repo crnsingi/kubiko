@@ -85,7 +85,7 @@ const Home = () => {
 
                 <View className="flex flex-col items-start ml-2 justify-center">
                   <Text className="text-xs font-rubik text-black-100">
-                    Good Morning
+                    Bom dia
                   </Text>
                   <Text className="text-base font-rubik-medium text-black-300">
                     {user?.name}
@@ -100,11 +100,11 @@ const Home = () => {
             <View className="my-5">
               <View className="flex flex-row items-center justify-between">
                 <Text className="text-xl font-rubik-bold text-black-300">
-                  Featured
+                  Destaques
                 </Text>
                 <TouchableOpacity>
                   <Text className="text-base font-rubik-bold text-primary-300">
-                    See all
+                    Ver tudo
                   </Text>
                 </TouchableOpacity>
               </View>
@@ -135,11 +135,11 @@ const Home = () => {
             <View className="mt-5">
               <View className="flex flex-row items-center justify-between">
                 <Text className="text-xl font-rubik-bold text-black-300">
-                  Our Recommendation
+                 Nossas recomendações 
                 </Text>
                 <TouchableOpacity>
                   <Text className="text-base font-rubik-bold text-primary-300">
-                    See all
+                    Ver tudo 
                   </Text>
                 </TouchableOpacity>
               </View>

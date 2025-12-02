@@ -12,10 +12,10 @@ const NoResults = () => {
         resizeMode="contain"
       />
       <Text className="text-2xl font-rubik-bold text-black-300 mt-5">
-        No Result
+       Sem resultados
       </Text>
       <Text className="text-base text-black-100 mt-2">
-        We could not find any result
+       Não conseguimos encontrar nenhum resultado
       </Text>
     </View>
   );
