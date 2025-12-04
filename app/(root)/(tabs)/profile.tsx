@@ -7,8 +7,6 @@ import { Alert, Image, ImageSourcePropType, ScrollView, Text, TouchableOpacity, 
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 
-
-
 interface SettingsItemProp {
   icon:ImageSourcePropType;
   title: string;

@@ -6,6 +6,8 @@ interface Props {
   item: Models.Document;
 }
 
+
+
 const Comment = ({ item }: Props) => {
   return (
     <View className="flex flex-col items-start">
