@@ -1,10 +1,10 @@
 import { ID } from "react-native-appwrite";
 import { config, databases } from "./appwrite";
 import {
-    agentImages,
-    galleryImages,
-    propertiesImages,
-    reviewImages,
+  agentImages,
+  galleryImages,
+  propertiesImages,
+  reviewImages,
 } from "./data";
 
 const COLLECTIONS = {
@@ -22,18 +22,16 @@ const propertyTypes = [
   "Studio",
   "Villa",
   "Apartments",
-  "Others",
+  "Other",
 ];
 
 const facilities = [
   "Laundry",
-  "Car Parking",
-  "Sports Center",
-  "Cutlery",
+  "Parking",
+  "Car-Parking",
   "Gym",
-  "Swimming pool",
   "Wifi",
-  "Pet Center",
+  "Pet-friendly",
 ];
 
 function getRandomSubset<T>(
