@@ -4,7 +4,6 @@ import {
   ActivityIndicator,
   FlatList,
   Image,
-  SafeAreaView,
   Text,
   TouchableOpacity,
   View,
@@ -18,6 +17,8 @@ import icons from "@/constants/icons";
 
 import { getProperties } from "@/lib/appwrite";
 import { useAppwrite } from "@/lib/useAppwrite";
+import { SafeAreaView } from "react-native-safe-area-context";
+
 
 const Explore = () => {
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
@@ -40,7 +41,7 @@ const Explore = () => {
       filter: params.filter!,
       query: params.query!,
     });
-  }, [params.filter, params.query]);
+  }, [params.filter, params.query, refetch]);
 
   const handleCardPress = (id: string) => router.push(`/properties/${id}`);
 
@@ -50,7 +51,7 @@ const Explore = () => {
         data={properties}
         numColumns={2}
         renderItem={({ item }) => (
-          <Card item={item} onPress={() => handleCardPress(item.$id)} />
+          <Card item={item as any} onPress={() => handleCardPress(item.$id)} />
         )}
         keyExtractor={(item) => item.$id}
         contentContainerClassName="pb-32"
