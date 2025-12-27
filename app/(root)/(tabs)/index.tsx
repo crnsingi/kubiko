@@ -118,7 +118,7 @@ const Home = () => {
                   data={latestProperties}
                   renderItem={({ item }) => (
                     <FeaturedCard
-                      item={item}
+                      item={item as any}
                       onPress={() => handleCardPress(item.$id)}
                     />
                   )}
