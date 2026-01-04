@@ -1,3 +1,11 @@
+import { Card, FeaturedCard } from "@/components/Cards";
+import Filters from "@/components/Filters";
+import NoResults from "@/components/NoResults";
+import Search from "@/components/Search";
+import icons from "@/constants/icons";
+import { getLatestProperties, getProperties } from "@/lib/appwrite";
+import { useGlobalContext } from "@/lib/global-provider";
+import { useAppwrite } from "@/lib/useAppwrite";
 import { router, useLocalSearchParams } from "expo-router";
 import { useEffect } from "react";
 import {
@@ -9,17 +17,6 @@ import {
   View
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-
-import icons from "@/constants/icons";
-
-import { Card, FeaturedCard } from "@/components/Cards";
-import Filters from "@/components/Filters";
-import NoResults from "@/components/NoResults";
-import Search from "@/components/Search";
-
-import { getLatestProperties, getProperties } from "@/lib/appwrite";
-import { useGlobalContext } from "@/lib/global-provider";
-import { useAppwrite } from "@/lib/useAppwrite";
 
 const Home = () => {
   const { user } = useGlobalContext();
