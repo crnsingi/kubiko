@@ -86,7 +86,7 @@ const Explore = () => {
               <Filters />
 
               <Text className="text-xl font-rubik-bold text-black-300 mt-5">
-                Found {properties?.length} Propriedades
+                Encontrado {properties?.length} Propriedades
 
               </Text>
             </View>
